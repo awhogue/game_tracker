@@ -21,7 +21,7 @@ class Bet:
 def parse_bets(input):
   # list of lists, to support parlays
   bet_groups = []
-  for p in sys.argv[1:]:
+  for p in input:
     bet_groups.append([ Bet(b) for b in p.split(' ') ])
 
   return bet_groups
@@ -71,7 +71,7 @@ def main():
     print usage
     sys.exit(1)
 
-  bet_groups = parse_bets(sys.argv)
+  bet_groups = parse_bets(sys.argv[1:])
 
   while True:
     print check_bets(bet_groups)
