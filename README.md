@@ -34,3 +34,5 @@ Output looks like:
     TEN -3.5  (lose) NYJ 16 - 11 TEN [Q4 03:09]
     CIN -3.5  (win)  CIN 30 -  0 CLE [Final]
     --------------------------------------------------
+
+All thanks to Andrew Gallant and his fantastic nflgame python module: https://github.com/BurntSushi/nflgame
